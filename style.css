@@ -1,0 +1,94 @@
+div, body, p{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	background: #27f
+}
+
+.modal{
+	width: 100vw;
+	height: 100vw;
+	position: absolute;
+	display: flex;
+	background: rgba(0,0,0,0.6);
+	z-index: 50;
+}
+
+.modal-img{
+	margin: auto;
+	width: 200px;
+
+}
+
+.opciones{
+	display: flex;
+	width: 100vw;
+	height: 100vw;
+
+	position: relative;
+	z-index: 2;
+}
+
+.opciones img, .opciones div{
+	transition: all 1s;
+}
+
+.microfono-conteiner{
+	display: flex;
+	flex-grow: 3;
+	flex-basis: 30vw;
+}
+
+.microfono{
+	margin: auto;
+	width: 200px;
+	opacity: 0;
+	filter: drop-shadow(10px 0px 40px #019);
+	
+	
+}
+
+.result{
+	margin: auto;
+	font-family: century gothic;
+	color: #fff;
+	font-size: 30px;
+	display: inline-block;
+	width: fit-content;
+	text-align: left;
+	flex-grow: 1;
+	
+}
+
+/*   animaciones   */
+
+@keyframes desaparecer{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes aparecer{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes apareceryexpandir{
+	0%{
+		opacity: 0;
+		width: 70px;
+	}
+	100%{
+		opacity: 1;
+		width: 200px;
+	}
+}
